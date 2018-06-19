@@ -1,11 +1,15 @@
-# test
+URL
 
-## Hello,world
+*[讓你的命令提示字元或 WSL 擁有一個美麗等寬的字型設定](https://blog.miniasp.com/post/2017/12/06/Microsoft-YaHei-Mono-Chinese-Font-for-Command-Prompt-and-WSL.aspx)
 
-### YPS
+*[Will 保哥的開發人員工具軟體清單 ( 最新 2017 年版 )](https://blog.miniasp.com/post/2017/09/13/Will-2017-Ultimate-Developer-Tool-Software-List.aspx)
 
-*[Google](https://google.com)
+*[Server World - Build Network Server](https://www.server-world.info/en/)
 
-![world cup](https://upload.wikimedia.org/wikipedia/en/thumb/6/67/2018_FIFA_World_Cup.svg/1200px-2018_FIFA_World_Cup.svg.png) 
+*[AI Academy - Python 快速上手](https://github.com/leeyt/aia-lab-python-tutorial)
 
-^_^
+*[Building Distribution Reference Tables in R](https://roh.engineering/post/building-distribution-reference-tables-in-r/)
+
+*[Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
+
+*[Learning R Programming](https://github.com/PacktPublishing/Learning-R-Programming)
