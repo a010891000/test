@@ -17,3 +17,5 @@ URL
 *[jackfrued/Python-100-Days: Python - 100天从新手到大师](https://github.com/jackfrued/Python-100-Days)
 
 *[Jack-Cherish/python-spider: Python3网络爬虫实战：VIP视频破解助手；GEETEST验证码破解；小说、动漫下载；手机APP爬取；财务报表入库；火车票抢票；抖音APP视频下载；百万英雄辅助；网易云音乐下载；B站视频和弹幕下载](https://github.com/jackfrued/Python-100-Days)
+
+*[trekhleb/javascript-algorithms: Algorithms and data structures implemented in JavaScript with explanations and links to further readings](https://github.com/trekhleb/javascript-algorithms)
