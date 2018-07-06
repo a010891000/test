@@ -19,3 +19,9 @@ URL
 *[Jack-Cherish/python-spider: Python3网络爬虫实战：VIP视频破解助手；GEETEST验证码破解；小说、动漫下载；手机APP爬取；财务报表入库；火车票抢票；抖音APP视频下载；百万英雄辅助；网易云音乐下载；B站视频和弹幕下载](https://github.com/jackfrued/Python-100-Days)
 
 *[trekhleb/javascript-algorithms: Algorithms and data structures implemented in JavaScript with explanations and links to further readings](https://github.com/trekhleb/javascript-algorithms)
+
+*[Snowden: "I Used Free And Open Source Software Like Debian And TOR. I Didn't Trust Microsoft"](http://fossbytes.com/snowden-free-open-source-software-like-debian-tor-didnt-trust-microsoft/)
+
+*[IBM developerWorks 中国 : IBM developerWorks : 技术主题](https://www.ibm.com/developerworks/cn/topics/)
+
+*[用 R 语言的 blogdown+hugo+netlify+github 建博客 | 统计之都](https://cosx.org/2018/01/build-blog-with-blogdown-hugo-netlify-github/)
