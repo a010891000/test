@@ -25,3 +25,7 @@ URL
 *[IBM developerWorks 中国 : IBM developerWorks : 技术主题](https://www.ibm.com/developerworks/cn/topics/)
 
 *[用 R 语言的 blogdown+hugo+netlify+github 建博客 | 统计之都](https://cosx.org/2018/01/build-blog-with-blogdown-hugo-netlify-github/)
+
+*[Python Data Science, Java i18n, GitLab, TestRail, VersionOne, DBUtils, Common CLI, Seaborn, Ansible, LOLCODE, Current Affairs 2018, Apache Commons Collections](https://www.tutorialspoint.com/index.htm)
+
+*[Tecmint: Linux Howtos, Tutorials & Guides](https://www.tecmint.com/)
