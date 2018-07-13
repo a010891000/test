@@ -34,6 +34,9 @@ pi@raspberrypi ~ $
 ```
 
 + 輸入whoami命令後，會顯示出鍵入命令的用戶是誰。
+
+![image](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/1.png)
+
 + 一些基本的命令行命令
 
 命令   | 描述 
