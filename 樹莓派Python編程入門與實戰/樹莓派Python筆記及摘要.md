@@ -66,3 +66,11 @@ pwd    | 顯示妳所在的位置的路徑（當前的工作路徑）
     - IDLE能在三個桌面操作系統上使用（Linux、Windows、OS X）。
     - 可在最初打開的IDLE窗口（IDLE交互模式窗口）輸入Python語句，也可直接開啟腳本(.py)並開始編譯或使用。
     - 在腳本內，更改完後要執行，系統會先要求儲存(按`Ctrl+S`組合鍵或點擊File→Save as→Save)，才可執行(按`F5`鍵或點擊Run→Run Module)。
+
+## 第4章 腳本的輸出
+1. 摘要
+2. 筆記
++ print函數顯示字符
+    - print("This is an example of using single quotes.") ＊使用單引號
+    - print('This is an example of using single quotes.') ＊使用雙引號
+    - 產出結果皆為：This is an example of using single quotes.
