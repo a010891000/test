@@ -74,3 +74,16 @@ pwd    | 顯示妳所在的位置的路徑（當前的工作路徑）
     - `print('This is an example of using single quotes.')`  **使用單引號**
     - `print("This is an example of using single quotes.")`  **使用雙引號**
     - 產出結果皆為：`This is an example of using single quotes.`
+    - 建議選擇一種引號並持續保持一次，前一個單引號，下一個雙引號，會讓代碼難以理解及混亂。
++ 一些Python轉譯序列
+
+轉譯序列 | 敘述
+------- | -------
+\'      | 顯示一個單引號
+\"      | 顯示一個雙引號
+\a      | 製造一個鐘聲
+\f      | 插入一個換頁
+\n      | 插入一個換行符號
+\t      | 插入一個水平製表符
+\u####  | 顯示以四個十六進位數字(####)所表示的 Unicode 字符
+
