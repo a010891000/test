@@ -74,3 +74,6 @@ pwd    | 顯示妳所在的位置的路徑（當前的工作路徑）
     - `print("This is an example of using single quotes.")`  ＊使用單引號
     - `print('This is an example of using single quotes.')`  ＊使用雙引號
     - 產出結果皆為：`This is an example of using single quotes.`
+    
+格式`[^id]`符号，文章尾或其他处声明。`[^id]:注解`
+效果：脚注[^footer]
