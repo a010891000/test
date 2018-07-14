@@ -71,6 +71,6 @@ pwd    | 顯示妳所在的位置的路徑（當前的工作路徑）
 1. 摘要
 2. 筆記
 + print函數顯示字符
-    - `print("This is an example of using single quotes.")`  ＊使用單引號
-    - `print('This is an example of using single quotes.')`  ＊使用雙引號
+    - `print('This is an example of using single quotes.')`  **使用單引號**
+    - `print("This is an example of using single quotes.")`  **使用雙引號**
     - 產出結果皆為：`This is an example of using single quotes.`
