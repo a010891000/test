@@ -77,6 +77,7 @@ pwd    | 顯示妳所在的位置的路徑（當前的工作路徑）
     - 建議選擇一種引號並持續保持一次，前一個單引號，下一個雙引號，會讓代碼難以理解及混亂。
 + 一些Python轉義序列
     - 轉義字符是一種特殊的字符常量。轉義字符以反斜線 "\" 開頭，後跟一個或幾個字符。
+    
 
 轉義序列 | 敘述
 ------- | -------
@@ -87,12 +88,17 @@ pwd    | 顯示妳所在的位置的路徑（當前的工作路徑）
 \n      | 插入一個換行符號
 \t      | 插入一個水平製表符
 \u####  | 顯示以四個十六進位（簡體書稱進制）數字(####)所表示的 Unicode 字符
+
+
++ 參考及注意事項 
     - [Unicode 編碼表](http://jicheng.tw/hanzi/unicode.html)
     - 網頁內的 `U+####` ，在python裡要輸入成 `\u####` 。
     - 如：圓周率( π )的十六進位數 U+03C0 ，就要輸入成 `\u03c0` (**大小寫不影響**)
 
 使用轉義序列添加換行符號
+
 ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/3.png)
 
 使用 Unicode 轉義序列
+
 ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/4.png)
