@@ -69,14 +69,17 @@ pwd    | 顯示妳所在的位置的路徑（當前的工作路徑）
 
 ## 第4章 腳本的輸出
 1. 摘要
++ 使用 print 函數進行輸出及使用 input 函數進行輸入。
++ 建立各種變量，並賦予變量一個值，且學習各種數據類型和在 Python 使用時的情況。
 2. 筆記
-+ print函數顯示字符
++ print 函數顯示字符
     - `print('This is an example of using single quotes.')`  **使用單引號**
     - `print("This is an example of using single quotes.")`  **使用雙引號**
     - 產出結果皆為：`This is an example of using single quotes.`
     - 建議選擇一種引號並持續保持一次，前一個單引號，下一個雙引號，會讓代碼難以理解及混亂。
+
 + 一些Python轉義序列
-    - 轉義字符是一種特殊的字符常量。轉義字符以反斜線 "\" 開頭，後跟一個或幾個字符。
+    - 轉義字符是一種特殊的字符常量。轉義字符以反斜線「\」開頭，後跟一個或幾個字符。
     
 
 轉義序列 | 敘述
@@ -102,3 +105,8 @@ pwd    | 顯示妳所在的位置的路徑（當前的工作路徑）
 使用 Unicode 轉義序列
 
 ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/4.png)
+
+## 第5章 程序中使用算數
+1. 摘要
+2. 筆記
+
