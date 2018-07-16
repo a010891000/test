@@ -131,7 +131,8 @@ not | 邏輯的 **非**
 ^ | 按位異或
 ~ | 二進位補碼
 
-+ 運算中使用一個變量時一定要賦值，不然 Python 會報錯。
+
+運算中使用一個變量時一定要賦值，不然 Python 會報錯。
 
 ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/5.png)
 
