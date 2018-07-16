@@ -136,3 +136,21 @@ not | 邏輯的 **非**
 
 ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/5.png)
 
+## 第6章 控制你的程序
+1. 摘要
+2. 筆記
++ 使用if語句
+
+最基本的結構化命令就是 if 語句。 if 語句的再 Python 的基本格式
+``` if (condition): statement ```
+
+數字比較運算符號
+
+運算符號 | 描述
+==      | 等於
+!=      | 不等於
+<>      | 不等於
+＞      | 大於
+＜      | 小於
+>=      | 大於或等於
+<=      | 小於或等於
