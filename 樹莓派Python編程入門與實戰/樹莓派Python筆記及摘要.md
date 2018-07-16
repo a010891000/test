@@ -142,6 +142,7 @@ not | 邏輯的 **非**
 + 使用if語句
 
 最基本的結構化命令就是 if 語句。 if 語句的再 Python 的基本格式
+
 ``` if (condition): statement ```
 
 數字比較運算符號
