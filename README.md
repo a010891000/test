@@ -29,3 +29,12 @@ URL
 * [Python Data Science, Java i18n, GitLab, TestRail, VersionOne, DBUtils, Common CLI, Seaborn, Ansible, LOLCODE, Current Affairs 2018, Apache Commons Collections](https://www.tutorialspoint.com/index.htm)
 
 * [Tecmint: Linux Howtos, Tutorials & Guides](https://www.tecmint.com/)
+
+* 郭耀仁
+  + [py_org](https://github.com/yaojenkuo/py_prg/blob/master/README.md)
+  
+  + [Python for Data Analysis](https://github.com/yaojenkuo/py4da)
+  
+  + [台大資工系統訓練班 Python 與資料科學應用的教學專案](https://github.com/yaojenkuo/python_4_ds)
+  
+  + [2017 IT 邦幫忙鐵人賽](https://github.com/yaojenkuo/learn_python_for_a_r_user)
