@@ -43,4 +43,3 @@ HDMI|V|V|V
 MicroUSB|V|V|V
 無線網路|X|X|V
 無線藍芽|X|X|V
-AV端子|V|X|X
