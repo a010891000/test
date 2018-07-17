@@ -31,7 +31,7 @@
         * 無線網路(可少買一個網卡)
         * 無線藍芽
 
-樹莓派差異
+樹莓派差異（B型）
 
 配置|第一代|第二代|第三代
 ----|------|-----|------
@@ -39,7 +39,10 @@ USB孔|  2  |  4 |   4
 GPIO PIN數|26|40|40
 記憶卡種類|SD|MicroSD|MicroSD
 記憶卡放置|按壓式|按壓式|插拔式
-HDMI|V|V|V
-MicroUSB|V|V|V
-無線網路|X|X|V
-無線藍芽|X|X|V
+wifi|無|無|802.11 和 藍芽 4.1
+
+# 資料來源
+
+![Raspberry Pi 1, 2, 3 compared. See the differences](https://www.stewright.me/2016/03/raspberry-pi-1-2-3-compared/)
+
+![樹莓派](https://zh.wikipedia.org/wiki/%E6%A0%91%E8%8E%93%E6%B4%BE)
