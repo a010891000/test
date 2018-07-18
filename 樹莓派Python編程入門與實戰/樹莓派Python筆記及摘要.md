@@ -179,3 +179,19 @@ not | 邏輯的 **非**
     ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Python_for_Raspberry_Pi/6.png)
 
     如圖所示，5 作為停止數字，顯示的數字相當於列表[0, 1, 2, 3, 4]。
+
+    - 只接受整數作為參數，不接受福點數或是字符串。
+
+    - 加入起始參數改變 range 的行為
+    `range(start,stop)`
+
+    ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Python_for_Raspberry_Pi/7.png)
+
+    如圖所示，從 1 開始到 5 前停下來
+
+    - 改變 range 函數產生數字列表的增加量，可以增夾一個步進參數。（默認情況下，數字遞增為 1 ）
+    `range(start,stop,step)`
+
+    ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Python_for_Raspberry_Pi/3.png)
+
+    如圖所示，起始為 1 到 12 前停下，輸出數字差距為 2 
