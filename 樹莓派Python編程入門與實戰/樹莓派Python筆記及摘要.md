@@ -171,7 +171,7 @@ not | 邏輯的 **非**
 
     `for variable in date_list:`
 
-       `set_of_Python_statements`
+    `set_of_Python_statements`
 
     - 易犯之錯誤：缺少冒號
 
@@ -217,4 +217,4 @@ not | 邏輯的 **非**
 
     `while condition_test_statement`
 
-       `set_of_Python_statements`
+    `set_of_Python_statements`
