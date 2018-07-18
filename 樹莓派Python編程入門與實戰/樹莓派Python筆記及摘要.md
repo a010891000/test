@@ -195,9 +195,9 @@ not | 邏輯的 **非**
 
 
     - 改變 range 函數產生數字列表的增加量，可以增夾一個步進參數。（默認情況下，數字遞增為 1 ）
-    
+
     `range(start,stop,step)`
 
-    ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Python_for_Raspberry_Pi/3.png)
+    ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Python_for_Raspberry_Pi/8.png)
 
     如圖所示，起始為 1 到 12 前停下，輸出數字差距為 2 
