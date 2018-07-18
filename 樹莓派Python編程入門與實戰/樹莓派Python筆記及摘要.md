@@ -169,9 +169,10 @@ not | 邏輯的 **非**
 
     - for 語法結構
 
-    `for variable in date_list:`
-
-    `set_of_Python_statements`
+    ```
+    for variable in date_list:
+        set_of_Python_statements
+    ```
 
     - 易犯之錯誤：缺少冒號
 
