@@ -215,7 +215,8 @@ not | 邏輯的 **非**
     - 被稱為條件控制的迴圈，因為迴圈的任務會一直執行下去，直到達到設定的條件，迴圈就會停止。
 
     - while 語法結構
-
-    `while condition_test_statement`
-
-    `set_of_Python_statements`
+    
+    ```
+    while condition_test_statement:
+        set_of_Python_statements
+    ```
