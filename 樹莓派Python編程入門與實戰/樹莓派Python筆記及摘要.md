@@ -164,12 +164,19 @@ not | 邏輯的 **非**
 + 運用 for 或 while 語句，處理重複的問題。
 
 2. 筆記
-+ for 迴圈易犯的錯誤
-    - 缺少冒號
++ for 函數
+    - 被稱為記數控制迴圈（簡體書稱為循環），迴圈的任務是被設定為執行一定的次數。
+
+    - for 語法結構
+
+    `for variable in date_list:`
+        `set_of_Python_statements`
+
+    - 易犯之錯誤：缺少冒號
 
     ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Python_for_Raspberry_Pi/4.png)
 
-    - 不一致的縮排
+    - 易犯之錯誤：不一致的縮排
 
     ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Python_for_Raspberry_Pi/5.png)
 
@@ -200,4 +207,11 @@ not | 邏輯的 **非**
 
     ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Python_for_Raspberry_Pi/8.png)
 
-    如圖所示，起始為 1 到 12 前停下，輸出數字差距為 2 
+    如圖所示，起始為 1 到 12 前停下，輸出數字差距為 2
+
++ while 函數
+    - 被稱為條件控制的迴圈，因為迴圈的任務會一直執行下去，直到達到設定的條件，迴圈就會停止。
+
+    - while 語法結構
+    `while condition_test_statement`
+        `set_of_Python_statements`
