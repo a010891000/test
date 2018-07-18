@@ -37,7 +37,7 @@ pi@raspberrypi ~ $
 
 + 輸入whoami命令後，會顯示出鍵入命令的用戶是誰。
 
-![image](https://raw.githubusercontent.com/a010891000/test/master/%E6%A8%B9%E8%8E%93%E6%B4%BEPython%E7%B7%A8%E7%A8%8B%E5%85%A5%E9%96%80%E8%88%87%E5%AF%A6%E6%88%B0/image/1.png)
+![whoami](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/1.png)
 
 + 一些基本的命令行命令
 
@@ -100,11 +100,11 @@ pwd    | 顯示妳所在的位置的路徑（當前的工作路徑）
 
 使用轉義序列添加換行符號
 
-![image](https://raw.githubusercontent.com/a010891000/test/master/%E6%A8%B9%E8%8E%93%E6%B4%BEPython%E7%B7%A8%E7%A8%8B%E5%85%A5%E9%96%80%E8%88%87%E5%AF%A6%E6%88%B0/image/3.png)
+![image](https://raw.githubusercontent.com/a010891000/test/master/image/Python_for_Raspberry_Pi/1.png)
 
 使用 Unicode 轉義序列
 
-![image](https://raw.githubusercontent.com/a010891000/test/master/%E6%A8%B9%E8%8E%93%E6%B4%BEPython%E7%B7%A8%E7%A8%8B%E5%85%A5%E9%96%80%E8%88%87%E5%AF%A6%E6%88%B0/image/4.png)
+![image](https://raw.githubusercontent.com/a010891000/test/master/image/Python_for_Raspberry_Pi/2.png)
 
 ## 第5章 程序中使用算數
 1. 摘要
@@ -134,7 +134,7 @@ not | 邏輯的 **非**
 
 運算中使用一個變量時一定要賦值，不然 Python 會報錯。
 
-![image](https://raw.githubusercontent.com/a010891000/test/master/%E6%A8%B9%E8%8E%93%E6%B4%BEPython%E7%B7%A8%E7%A8%8B%E5%85%A5%E9%96%80%E8%88%87%E5%AF%A6%E6%88%B0/image/5.png)
+![image](https://raw.githubusercontent.com/a010891000/test/master/image/Python_for_Raspberry_Pi/3.png)
 
 ## 第6章 控制你的程序
 1. 摘要
@@ -167,6 +167,9 @@ not | 邏輯的 **非**
 + for迴圈易犯的錯誤
     - 缺少冒號
 
+    ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Python_for_Raspberry_Pi/4.png)
 
-    
     - 不一致的縮排
+
+    ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Python_for_Raspberry_Pi/5.png)
+
