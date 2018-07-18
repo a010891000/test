@@ -164,7 +164,7 @@ not | 邏輯的 **非**
 + 運用 for 或 while 語句，處理重複的問題。
 
 2. 筆記
-+ for迴圈易犯的錯誤
++ for 迴圈易犯的錯誤
     - 缺少冒號
 
     ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Python_for_Raspberry_Pi/4.png)
@@ -173,3 +173,9 @@ not | 邏輯的 **非**
 
     ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Python_for_Raspberry_Pi/5.png)
 
++ range 函數
+    - range 函數默認情況下，會從0開始產生到停止之間的所有數字列表
+
+    ![image](https://raw.githubusercontent.com/a010891000/test/master/image/Python_for_Raspberry_Pi/6.png)
+
+    如圖所示，5 作為停止數字，顯示的數字相當於列表[0, 1, 2, 3, 4]。
