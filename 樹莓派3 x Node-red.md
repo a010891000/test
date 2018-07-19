@@ -64,7 +64,7 @@ network={
 }
 ```
 
-將新增的文件檔案名稱更改為 wpa_supplicant.conf      **.txt要記得刪除**
+將新增的文件檔案名稱更改為 wpa_supplicant.conf (**.txt要記得刪除**)
 
 `新文字文件.txt　→　wpa_supplicant.conf`
 
