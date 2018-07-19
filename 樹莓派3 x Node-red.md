@@ -92,7 +92,7 @@ network={
 ![ifconfig](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/3.png)
 
 要進入raspi-config，在終端機輸入 `sudo raspi-config`後，會進入樹莓派系統內部設定。
-+ sudo = super user do 意思是：以最高執行者執行
++ sudo = super user do 意思是：以最高管理者執行
 
 ![sudo raspi-config](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/4.png)
 
@@ -115,7 +115,43 @@ network={
 `sudo apt-get dist-upgrade` 會將樹莓派所推薦的套件安裝並更新。
 
 ### 安裝 VNC server
-打開瀏覽器，搜尋 vnc viewer，會看到 VNC Viewer for Google Chrome 的連結，是在 Chrome Web Store 上。
+打開 chrome 瀏覽器，搜尋 vnc viewer，會看到 VNC Viewer for Google Chrome 的連結，是在 Chrome Web Store 上。
+
+安裝 tightvncserver 的指令：`sudo apt-get install tightvncserver`
+
+啟動的指令：`tightvncserver` 後，會要求輸入密碼才能進入 VNC 遠端桌面，而密碼是要自己設定，且要重複輸入，確保密碼正確。
+
+打開瀏覽器 chrome ，點選應用程式，點選 VNC Viewer for Google Chrome 。啟動後，輸入樹莓派的 IP (如 192.168.1.XXX:5901 )，並選擇連線，再輸入密碼，即可連線到 VNC 的桌面。
+
++ 5901 為 VNC 預設開啟的 port ，供使用者連線。
+
+因為只要重新啟動， VNC 就會被關閉且不會重啟後不會自動開啟，所以將這套軟體變成開機時預設啟動的軟體。
+
+設定 tightvncserver 開機自動啟動，輸入指令：`sudo nano /etc/systemd/system/tightvncserver.service` ，將會打開 nano 的編輯畫面。
+
+輸入
+
+```
+[Unit]
+Descript=TightVNC remote desktop server
+After=sshd.service
+
+[Service]
+Type=dbus
+ExecStart=/usr/bin/tightvncserver :1
+User=pi
+Type=forking
+
+[Install]
+WantedBy=multi-user.target
+```
+
+按下`Ctrl+X`，會詢問是否存檔，輸入`Y`，會詢問儲存在哪個檔案，壓`Enter`後，會儲存在輸入的路徑。
+
+要讓軟體自動啟動，需要最高權限，而更改使用者的指令：`sudo chown root:root /etc/systemd/system/tightvncserver.service`
+
+將軟體增加到自動開機的服務內`sudo systemctl enable tightvncserver.service`
+
 
 ### 複製 SD card
 + 使用 Raspberry Pi 內鍵記憶卡複製軟體
