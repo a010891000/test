@@ -12,28 +12,28 @@
     - GPIO 可接上各式各樣的擴充版、馬達或電器設備。
 
 ### 家族介紹（發行順序由上往下）
-    - Raspberry Pi A
-        * 體積較小
-        * 價格較便宜（約 25 美金）
-    - Raspberry Pi B (基準)
-        * Braodom設計
-        * 700 MB/Hz
-        * 記憶體 256 MB / 512 MB
-        * 價格：約為 35 美金
-    - Raspberry Pi B+
-        * 消除 V 端子
-        * 增加兩個 USB
-        * 更多的 GPIO
-    - Raspberry Pi 2
-        * 四核心 900 MB/Hz
-        * 記憶體 1G
-    - Raspberry Pi Zero
-        * 效能介於 B+ 和 2 之間
-        * 價格最便宜（約 5 美金），但因易缺貨造成價格不固定
-    - Raspberry Pi 3
-        * 四核心 1.2 G/Hz
-        * 無線網路(可少買一個網卡)
-        * 無線藍芽
++ Raspberry Pi A
+    - 體積較小
+    - 價格較便宜（約 25 美金）
++ Raspberry Pi B (基準)
+    - Braodom設計
+    - 700 MB/Hz
+    - 記憶體 256 MB / 512 MB
+    - 價格：約為 35 美金
++ Raspberry Pi B+
+    - 消除 V 端子
+    - 增加兩個 USB
+    - 更多的 GPIO
++ Raspberry Pi 2
+    - 四核心 900 MB/Hz
+    - 記憶體 1G
++ Raspberry Pi Zero
+    - 效能介於 B+ 和 2 之間
+    - 價格最便宜（約 5 美金），但因易缺貨造成價格不固定
++ Raspberry Pi 3
+    - 四核心 1.2 G/Hz
+    - 無線網路(可少買一個網卡)
+    - 無線藍芽
 
 樹莓派差異（B型）
 
