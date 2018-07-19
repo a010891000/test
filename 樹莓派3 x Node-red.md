@@ -91,11 +91,38 @@ network={
 
 ![ifconfig](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/3.png)
 
-要進入raspi-config，在終端機輸入 `sudo raspi-config`後，會進入樹莓派系統內部設定
+要進入raspi-config，在終端機輸入 `sudo raspi-config`後，會進入樹莓派系統內部設定。
 + sudo = super user do 意思是：以最高執行者執行
 
+![sudo raspi-config](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/4.png)
 
 ![sudo raspi-config](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/4.png)
+
++ Internationalistation Options（國際化選項設定）→ Change Locate（地區設置）→ en_US.UTF-8 UTF-8 → en_US.UTF-8
+
++ Internationalistation Options（國際化選項設定）→ Change TimeZone（時區設置）→ Asia（亞洲） → Taipei
+
++ 按 Tab 可自動帶入完整指令，Tab 鍵連按 2 下可自動提示相關指令。
+
++ `sudo init 0` 關機； `sudo init 6` 重新開機。
+
+### Raspberry Pi 升級到最新狀態
+
+`sudo apt-get update` 只會更新套件列表，並未更新套件。
+
+`sudo apt-get upgrade` 是將現有的套件更新，並不會安裝因版本更新而新增的套件與程是。
+
+`sudo apt-get dist-upgrade` 會將樹莓派所推薦的套件安裝並更新。
+
+### 安裝 VNC server
+打開瀏覽器，搜尋 vnc viewer，會看到 VNC Viewer for Google Chrome 的連結，是在 Chrome Web Store 上。
+
+### 複製 SD card
++ 使用 Raspberry Pi 內鍵記憶卡複製軟體
++ 使用 Win32 disk Imager 備份記憶卡
+
+
+### 重點回庫
 
 # 資料來源
 
