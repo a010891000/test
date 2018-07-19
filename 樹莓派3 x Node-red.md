@@ -41,6 +41,31 @@ GPIO PIN數|26|40|40
 記憶卡放置|按壓式|按壓式|插拔式
 wifi|無|無|802.11 和 藍芽 4.1
 
+# 設定網路
+
+2016/03/18前，樹莓派要設定網路必須要先接受螢幕、鍵盤及滑鼠，才能從設定介面內，設定無線網路 ID 及密碼。但因 Raspberry pi 3 問世後，因為其內建無線網路，可直接透過設置擋寫入執行，上載到樹莓派作業系統並連線網路。
+
+新增文件檔(.txt)在 SD 卡內，並在文件檔內新增以下內容
+
+```
+country=TW
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+    ssid="無線網路名稱"  **根據使用的無線網路做更改，且大小寫和下底線有差，所以要照上面的 SSID 輸入**
+    psk="無線網路密碼"
+}
+```
++ 新增 wpa_supplicant.conf 到 SD 卡內
+
+
+
+
+
+
+
+
 # 資料來源
 
 *[Raspberry Pi 1, 2, 3 compared. See the differences](https://www.stewright.me/2016/03/raspberry-pi-1-2-3-compared/)
