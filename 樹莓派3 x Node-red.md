@@ -79,15 +79,23 @@ network={
 如何得知 Raspberry pi 的 IP 位置？以下有三種方法
 1. IP 分享器內部設定（網路管理員）
 2. 有接螢幕滑鼠與網路（最簡單）
-    + ifconfig
-    + Pi 桌面
-3. 只有接上網路（最實用）
-    + Advanced IP Scanner
+    + 在樹莓派桌面在終端機(Terminal)內輸入 ifconfig 會跳出無線網路的 IP 位置。
+    + 樹莓派桌面將滑鼠游標放置在無線網路圖標上，即能看見無線網路 IP 位置。
+3. 從網路上下載軟體，只要接上網路（最實用）
+    + Advanced IP Scanner (會顯示出製造商和MAC位址)
     + Adafruit Pi Finder
 
+### 設定 rasp-config
+
+在終端機內輸入 `ifconfig` 就能查看樹莓派 IP 位置
+
+![ifconfig](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/3.png)
+
+要進入raspi-config，在終端機輸入 `sudo raspi-config`後，會進入樹莓派系統內部設定
++ sudo = super user do 意思是：以最高執行者執行
 
 
-
+![sudo raspi-config](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/4.png)
 
 # 資料來源
 
