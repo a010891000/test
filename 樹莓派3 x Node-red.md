@@ -96,8 +96,6 @@ network={
 
 ![sudo raspi-config](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/4.png)
 
-![sudo raspi-config](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/4.png)
-
 + Internationalistation Options（國際化選項設定）→ Change Locate（地區設置）→ en_US.UTF-8 UTF-8 → en_US.UTF-8
 
 + Internationalistation Options（國際化選項設定）→ Change TimeZone（時區設置）→ Asia（亞洲） → Taipei
@@ -127,9 +125,7 @@ network={
 
 因為只要重新啟動， VNC 就會被關閉且不會重啟後不會自動開啟，所以將這套軟體變成開機時預設啟動的軟體。
 
-設定 tightvncserver 開機自動啟動，輸入指令：`sudo nano /etc/systemd/system/tightvncserver.service` ，將會打開 nano 的編輯畫面。
-
-輸入
+設定 tightvncserver 開機自動啟動，輸入指令：`sudo nano /etc/systemd/system/tightvncserver.service` ，將會打開 nano 的編輯畫面後輸入：
 
 ```
 [Unit]
