@@ -82,7 +82,7 @@ network={
     + 在樹莓派桌面在終端機(Terminal)內輸入 ifconfig 會跳出無線網路的 IP 位置。
     + 樹莓派桌面將滑鼠游標放置在無線網路圖標上，即能看見無線網路 IP 位置。
 3. 從網路上下載軟體，只要接上網路（最實用）
-    + Advanced IP Scanner (會顯示出製造商和MAC位址)
+    + Advanced IP Scanner （會顯示出製造商和MAC位址）
     + Adafruit Pi Finder
 
 ### 設定 rasp-config
