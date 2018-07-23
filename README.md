@@ -30,6 +30,21 @@ URL
 
 * [Tecmint: Linux Howtos, Tutorials & Guides](https://www.tecmint.com/)
 
+* [Python Data Science, Java i18n, GitLab, TestRail, VersionOne, DBUtils, Common CLI, Seaborn, Ansible, LOLCODE, Current Affairs 2018, Apache Commons Collections](https://www.tutorialspoint.com/index.htm)
+
+* [All AWESOME Linux Applications and Tools](https://www.fossmint.com/awesome-linux-software/?utm_content=bufferde5c8&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
+
+* [jaywcjlove/linux-command: Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux](https://github.com/jaywcjlove/linux-command)
+
+* [BilalReffas/EmojiIntelligence: Neural Network built in Apple Playground using Swift](https://github.com/BilalReffas/EmojiIntelligence)
+
+* [byoungd/English-level-up-tips-for-Chinese: 可能是让你受益匪浅的英语进阶指南](https://github.com/byoungd/english-level-up-tips-for-Chinese)
+
+* [Slides - Google 雲端硬碟](https://drive.google.com/drive/folders/1d2_XzJkRQV7-li7jxqMto0wAgn0Bugcc)
+
+* [第 9 屆 IT 邦幫忙鐵人賽](https://ithelp.ithome.com.tw/ironman#ir-list)
+
+
 * 郭耀仁
   + [py_org](https://github.com/yaojenkuo/py_prg/blob/master/README.md)
   
