@@ -2,6 +2,11 @@
 
 ## 作者：郭耀仁
 
+### 關鍵字( keyword )
+
++ Numpy:高階統計軟體
++ pandas
+
 ### 基本變數類型
 
 Python 的基本變數類型分為以下這幾類：
@@ -35,7 +40,7 @@ Python 轉換變數類型的函數：
 
 ### 迴圈與流程控制
 
-####Python 的 break 與 continue
+#### Python 的 break 與 continue
 
 利用 `break` 描述告訴 for 迴圈當迭代器（此處指變數 ironman）小於 10 的時候要結束迴圈；利用 `continue` 描述告訴 for 迴圈當迭代器小於 10 的時候要跳過它然後繼續執行。
 
@@ -63,3 +68,25 @@ for ironman in ironmen:
 print("---")
 print(ironman) # 把迴圈的迭代器（iterator）或稱游標（cursor）最後的值印出來看看
 ```
+
+## 載入資料
+
+我們選擇幾種常見的讀入資料格式，分別使用 Python 進行載入。
+
++ csv
++ 不同分隔符號的資料
+    - 以 `tab 鍵（"\t"）` 分隔
+    - 以 `空格（"\s"）` 分隔
+    - 以 `冒號（":"）`分隔
++ Excel 試算表
++ JSON
+
+副檔名為 .csv 的資料格式顧名思義是逗號分隔資料（comma separated values），是最常見的表格式資料（tabular data）格式。
+
+我們使用 `pandas` 套件的 `read_csv()` 方法來載入。
+
+```
+
+```
+
+![csv](/img/1.csv.png)
