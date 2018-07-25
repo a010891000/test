@@ -125,3 +125,38 @@ iris_colon_sep_df.head()
 ```
 
 ![colon](https://raw.githubusercontent.com/a010891000/test/master/IT/learn_python_for_a_r_user/img/3.colon.png)
+
+## 載入 Excel 試算表
+
+我們以副檔名為 `.xlsx` 的 Excel 試算表檔案為例。
+
+我們使用 `pandas` 套件的 `read_excel()` 方法來載入。
+
+```
+import pandas as pd
+
+url = "https://storage.googleapis.com/2017_ithome_ironman/data/iris.xlsx" # 在雲端上儲存了一份 Excel 試算表
+iris_xlsx_df = pd.read_excel(url)
+iris_xlsx_df.head()
+```
+
+![excel](https://raw.githubusercontent.com/a010891000/test/master/IT/learn_python_for_a_r_user/img/4.excel.png)
+
+
+## 載入 JSON
+
+JSON（JavaScript Object Notation）格式的資料是網站資料傳輸以及 NoSQL（Not only SQL）資料庫儲存的主要類型，R 語言與 Python 有相對應的套件可以協助我們把 
+JSON 資料格式載入後轉換為我們熟悉的 data frame。
+
+
+我們使用 `pandas` 套件的 `read_json()` 方法來載入。
+
+```
+import pandas as pd
+
+url = "https://storage.googleapis.com/2017_ithome_ironman/data/iris.json" # 在雲端上儲存了一份 JSON 檔
+iris_json_df = pd.read_json(url)
+iris_json_df.head()
+```
+
+![json](https://raw.githubusercontent.com/a010891000/test/master/IT/learn_python_for_a_r_user/img/5.json.png)
