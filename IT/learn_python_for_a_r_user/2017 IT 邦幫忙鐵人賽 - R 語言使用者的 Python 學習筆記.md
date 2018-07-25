@@ -89,4 +89,4 @@ print(ironman) # 把迴圈的迭代器（iterator）或稱游標（cursor）最�
 
 ```
 
-![csv](/img/1.csv.png)
+![csv](IT/learn_python_for_a_r_user/img/1.csv.png)
