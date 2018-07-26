@@ -262,7 +262,7 @@ plt.show()
 
 ![Bar plot for 郭耀仁](https://raw.githubusercontent.com/a010891000/test/master/IT/learn_python_for_a_r_user/img/9.1bar_plot.png)
 
-自己使用相同程式碼跑出的結果(目前只知道，有名稱未被定義，後續追蹤原因)
+自己使用相同程式碼跑出的結果(目前只知道，有名稱未被定義，後續追蹤為何跑不出相同圖形的原因)
 
 ![Bar plot for me](https://raw.githubusercontent.com/a010891000/test/master/IT/learn_python_for_a_r_user/img/9.2bar_plot.png)
 
@@ -286,6 +286,21 @@ plt.show()
 
 ![Box plot](https://raw.githubusercontent.com/a010891000/test/master/IT/learn_python_for_a_r_user/img/10.box_plot.png)
 
+### 輸出圖形
+
+使用圖形物件`savefig()`方法。
+
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+nomal_samples = np.random.normal(size = 100000) # 生成 100000 組標準常態分配（平均值為 0，標準差為 1 的常態分配）隨機變數
+
+plt.hist(normal_samples)
+plt.savefig(fname = "my_hist.png", format = "png") # 檔名為 my_hist，輸出檔案類型為 png 
+```
+
+
 ### 補充資料
 
 plot 函數的調用方式很靈活，第一句將 x,y 陣列傳遞給 plot 之後，用關鍵字參數指定各種屬性：
@@ -302,3 +317,38 @@ plot 函數的調用方式很靈活，第一句將 x,y 陣列傳遞給 plot 之�
 + xlim : 設置 X 軸的範圍(最小值, 最大值) 
 + ylim : 設置 Y 軸的範圍(最小值, 最大值)
 + legend : 顯示圖例
++ savefig : 輸出圖片檔
+
+以線圖為例
+
+```
+%matplotlib inline
+
+import matplotlib.pyplot as plt
+
+temperature = [28, 27, 27, 27, 27, 28, 29, 30, 31, 32, 32, 32, 32, 32, 32, 32, 31, 30, 29, 29, 29, 28, 28, 28] 
+hour = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+# x和y軸的筆數要相同!!
+
+# plt.plot(hour, temperature) # plt.plot(x,y) 
+
+plt.plot(hour, temperature,label="$temperature$",color="red",linewidth=2) #圖例名稱為 temperature ，曲線的顏色為紅色，曲線寬度為2
+plt.xlabel("Time(hr)") # X 軸單位 
+plt.ylabel("°C")       # Y 軸單位   # ALT+0176 = °
+plt.title("Celsius") # 圖表名稱為Celsius
+plt.legend() # 顯示圖例
+plt.show() # 繪製輸出的圖像
+```
+
+![Line plot](https://raw.githubusercontent.com/a010891000/test/master/IT/learn_python_for_a_r_user/img/11.line_plot.png)
+
+#### plt.savefig()
+
+```
+savefig(fname, dpi=None, facecolor='w', edgecolor='w',
+        orientation='portrait', papertype=None, format=None,
+        transparent=False, bbox_inches=None, pad_inches=0.1,
+        frameon=None)
+```
+參考資料：
+[matplotlib.pyplot.savefig — Matplotlib 2.2.2 documentation](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.savefig.html)  # **matplotlib.plat.savefig 基本介紹及應用**
