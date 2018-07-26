@@ -126,7 +126,7 @@ iris_colon_sep_df.head()
 
 ![colon](https://raw.githubusercontent.com/a010891000/test/master/IT/learn_python_for_a_r_user/img/3.colon.png)
 
-## 載入 Excel 試算表
+### 載入 Excel 試算表
 
 我們以副檔名為 `.xlsx` 的 Excel 試算表檔案為例。
 
@@ -143,7 +143,7 @@ iris_xlsx_df.head()
 ![excel](https://raw.githubusercontent.com/a010891000/test/master/IT/learn_python_for_a_r_user/img/4.excel.png)
 
 
-## 載入 JSON
+### 載入 JSON
 
 JSON（JavaScript Object Notation）格式的資料是網站資料傳輸以及 NoSQL（Not only SQL）資料庫儲存的主要類型，R 語言與 Python 有相對應的套件可以協助我們把 
 JSON 資料格式載入後轉換為我們熟悉的 data frame。
@@ -160,3 +160,145 @@ iris_json_df.head()
 ```
 
 ![json](https://raw.githubusercontent.com/a010891000/test/master/IT/learn_python_for_a_r_user/img/5.json.png)
+
+我們透過 pandas 套件的 `read_csv()`、`read_table()`、`read_excel()` 與 `read_json` 等方法可以將不同的資料格式轉換為我們熟悉的 data frame 資料結構
+
+## 網頁解析
+
+`BeautifulSoup` 我們使用的選擇概念是 CSS 選擇器；`rvest` 我們則是使用 XPATH 選擇器
+
+## 資料視覺化 matplotlib
+
+我們的開發環境是 Jupyter Notebook，這個指令可以讓圖形不會在新視窗呈現。
+
+```
+%matplotlib inline
+```
+
+我們今天試著使用看看 **matplotlib** 來畫一些基本的圖形，包括：
+
+- 直方圖（Histogram）
+- 散佈圖（Scatter plot）
+- 線圖（Line plot）
+- 長條圖（Bar plot）
+- 盒鬚圖（Box plot）
+
+### 直方圖（Histogram）
+
+使用 `matplotlib.pyplot` 的 `hist()` 方法。
+
+```
+%matplotlib inline
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+normal_samples = np.random.normal(size = 100000) # 生成 100000 組標準常態分配（平均值為 0，標準差為 1 的常態分配）隨機變數
+
+plt.hist(normal_samples)
+plt.show()
+```
+
+![histogram](https://raw.githubusercontent.com/a010891000/test/master/IT/learn_python_for_a_r_user/img/6.histogram.png)
+
+### 散佈圖（Scatter plot）
+
+使用 `matplotlib.pyplot` 的 `scatter()` 方法。
+
+```
+%matplotlib inline
+
+import matplotlib.pyplot as plt
+
+speed = [4, 4, 7, 7, 8, 9, 10, 10, 10, 11, 11, 12, 12, 12, 12, 13, 13, 13, 13, 14, 14, 14, 14, 15, 15, 15, 16, 16, 17, 17, 17, 18, 18, 18, 18, 19, 19, 19, 20, 20, 20, 20, 20, 22, 23, 24, 24, 24, 24, 25]
+dist = [2, 10, 4, 22, 16, 10, 18, 26, 34, 17, 28, 14, 20, 24, 28, 26, 34, 34, 46, 26, 36, 60, 80, 20, 26, 54, 32, 40, 32, 40, 50, 42, 56, 76, 84, 36, 46, 68, 32, 48, 52, 56, 64, 66, 54, 70, 92, 93, 120, 85]
+
+plt.scatter(speed, dist)
+plt.show()
+```
+
+![Scatter plot](https://raw.githubusercontent.com/a010891000/test/master/IT/learn_python_for_a_r_user/img/7.scatter_plot.png)
+
+### 線圖（Line plot）
+
+使用 `matplotlib.pyplot` 的 `plot()` 方法。
+
+```
+%matplotlib inline
+
+import matplotlib.pyplot as plt
+
+speed = [4, 4, 7, 7, 8, 9, 10, 10, 10, 11, 11, 12, 12, 12, 12, 13, 13, 13, 13, 14, 14, 14, 14, 15, 15, 15, 16, 16, 17, 17, 17, 18, 18, 18, 18, 19, 19, 19, 20, 20, 20, 20, 20, 22, 23, 24, 24, 24, 24, 25]
+dist = [2, 10, 4, 22, 16, 10, 18, 26, 34, 17, 28, 14, 20, 24, 28, 26, 34, 34, 46, 26, 36, 60, 80, 20, 26, 54, 32, 40, 32, 40, 50, 42, 56, 76, 84, 36, 46, 68, 32, 48, 52, 56, 64, 66, 54, 70, 92, 93, 120, 85]
+
+plt.plot(speed, dist)
+plt.show()
+```
+
+![Line plot](https://raw.githubusercontent.com/a010891000/test/master/IT/learn_python_for_a_r_user/img/8.line_plot.png)
+
+### 長條圖（Bar plot）
+
+使用 `matplotlib.pyplot` 的 `bar()` 方法。
+
+```
+%matplotlib inline
+
+from collections import Counter
+import matplotlib.pyplot as plt
+import numpy as np
+
+cyl = [6 ,6 ,4 ,6 ,8 ,6 ,8 ,4 ,4 ,6 ,6 ,8 ,8 ,8 ,8 ,8 ,8 ,4 ,4 ,4 ,4 ,8 ,8 ,8 ,8 ,4 ,4 ,4 ,8 ,6 ,8 ,4]
+
+labels, values = zip(*Counter(cyl).items())
+width = 1
+
+plt.bar(indexes, values)
+plt.xticks(indexes + width * 0.5, labels)
+plt.show()
+```
+
+郭耀仁先生的結果：
+
+![Bar plot for 郭耀仁](https://raw.githubusercontent.com/a010891000/test/master/IT/learn_python_for_a_r_user/img/9.1bar_plot.png)
+
+自己使用相同程式碼跑出的結果(目前只知道，有名稱未被定義，後續追蹤原因)
+
+![Bar plot for me](https://raw.githubusercontent.com/a010891000/test/master/IT/learn_python_for_a_r_user/img/9.2bar_plot.png)
+
+
+
+### 盒鬚圖（Box plot）
+
+使用 matplotlib.pyplot 的 boxplot() 方法。
+
+```
+%matplotlib inline
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+normal_samples = np.random.normal(size = 100000) # 生成 100000 組標準常態分配（平均值為 0，標準差為 1 的常態分配）隨機變數
+
+plt.boxplot(normal_samples)
+plt.show()
+```
+
+![Box plot](https://raw.githubusercontent.com/a010891000/test/master/IT/learn_python_for_a_r_user/img/10.box_plot.png)
+
+### 補充資料
+
+plot 函數的調用方式很靈活，第一句將 x,y 陣列傳遞給 plot 之後，用關鍵字參數指定各種屬性：
+
++ label : 給所繪製的曲線一個名字(即是圖例名稱)，此名字在圖示 (legend) 中顯示。只要在字串前後添加 "$" 符號， matplotlib 就會使用其內嵌的 latex 引擎繪製的數學公式。
++ color : 指定曲線的顏色
++ linewidth : 指定曲線的寬度
+
+設置繪圖物件的各個屬性：
+
++ xlabel : 設置 X 軸的文字
++ ylabel : 設置 Y 軸的文字
++ title : 設置圖表的標題
++ xlim : 設置 X 軸的範圍(最小值, 最大值) 
++ ylim : 設置 Y 軸的範圍(最小值, 最大值)
++ legend : 顯示圖例
