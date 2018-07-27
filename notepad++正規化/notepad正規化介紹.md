@@ -34,8 +34,41 @@ https://ithelp.ithome.com.tw/articles/10192928
 
 使用XPath Helper 的擴充程式，抓取到的名稱或網址，經過複製並貼上到notepad++
 
-![paste]()
+![paste](https://raw.githubusercontent.com/a010891000/test/master/notepad%2B%2B%E6%AD%A3%E8%A6%8F%E5%8C%96/img/1.paste.png)
 
-按著`Alt`將前面空白處刪除，按`Ctrl+H`，點擊 **搜尋** 在取代內容輸入 /s+$ 點選全部取代，則會將空格全部取代。
+按住`Alt`，向下向右選取，並將空白處刪除
+
+![alt](https://raw.githubusercontent.com/a010891000/test/master/notepad%2B%2B%E6%AD%A3%E8%A6%8F%E5%8C%96/img/2.alt.png)
+
+按`Ctrl+H`，會跳出 **取代** 視窗。在 **尋找內容** 輸入`\s+$` (可砍空白) → 勾選 **規格運算式** → 點選 **全部取代**
+
+![\s+$](https://raw.githubusercontent.com/a010891000/test/master/notepad%2B%2B%E6%AD%A3%E8%A6%8F%E5%8C%96/img/3.s+$.png)
+
+按`Alr+C`，會跳出 **直行編譯** 視窗，選擇插入數字，初始數字填 1 ，增量填 1 ，勾選齊頭補零
+![number](https://raw.githubusercontent.com/a010891000/test/master/notepad%2B%2B%E6%AD%A3%E8%A6%8F%E5%8C%96/img/4.number.png)
+
+按下編輯，結果如下
+
+![sort](https://raw.githubusercontent.com/a010891000/test/master/notepad%2B%2B%E6%AD%A3%E8%A6%8F%E5%8C%96/img/5.sort.png)
+
+按`Alr+C`，會跳出 **直行編譯** 視窗，選擇插入文字，輸入.[]()
+
+![text](https://raw.githubusercontent.com/a010891000/test/master/notepad%2B%2B%E6%AD%A3%E8%A6%8F%E5%8C%96/img/6.text.png)
+
+按下編輯，結果如下
+
+![add](https://raw.githubusercontent.com/a010891000/test/master/notepad%2B%2B%E6%AD%A3%E8%A6%8F%E5%8C%96/img/7.add.png)
+
+按`shift+Alt`+方向鍵選取需要的範圍，並剪下貼上
+
+![add](https://raw.githubusercontent.com/a010891000/test/master/notepad%2B%2B%E6%AD%A3%E8%A6%8F%E5%8C%96/img/7.add.png)
+
+貼上後結果如下，文字都會在[]內
+
+![add](https://raw.githubusercontent.com/a010891000/test/master/notepad%2B%2B%E6%AD%A3%E8%A6%8F%E5%8C%96/img/7.add.png)
+
+**要使用markdown格式，必須先貼網址**
+
+因為標題長度不固定，如果先貼標題名稱會致使網址無法完全在()內
 
 <!--Visual Studio Code 是否也能如此使用? -->
