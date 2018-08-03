@@ -33,3 +33,4 @@ Python套件
 + conda install pandas -y
 + conda install xlrd -y
 + conda install matplotlib -y
++ conda install django -y
