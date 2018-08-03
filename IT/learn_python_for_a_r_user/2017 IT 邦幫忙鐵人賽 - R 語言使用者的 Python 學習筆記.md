@@ -7,6 +7,7 @@
 + Numpy:高階統計軟體
 + pandas
 
+
 ## 基本變數類型
 
 Python 的基本變數類型分為以下這幾類：
@@ -18,12 +19,14 @@ Python 的基本變數類型分為以下這幾類：
 + 布林值（bool）
 + 文字（str）
 
+
+
 Python 回傳變數類型的函數是 type()，如果不清楚這個函數有哪些參數可以使用，你可以在 cell 中輸入 help(type) 來看說明文件。
 
-種類|R |python
+種類| Python |R
 ----|--|----
-複數宣告|i|j
-布林值|TRUE/FLASE|true/false
+複數宣告|j|i
+布林值|true/false|TRUE/FLASE
 索引起始值|0|1
 
 ## 變數類型的轉換
@@ -37,6 +40,26 @@ Python 轉換變數類型的函數：
 + str()：轉換變數類型為 str
 
 轉換變數類型的函數也不是萬能，比如說 `int("True")` 不會成功，想要將 "True" 轉換為整數就要使用兩次轉換類型的函數 `int(bool("True"))`。
+
+## 資料結構
+
+Python 基本的資料結構大致分為三類：
++ list
++ tuple
++ dictionary
+
+種類|Python|R
+:-----:|:-----:|:----:
+回傳變數類型的函數|type()|class()
+資料結構|list、tuple、dictionary|vector、factor、matrix、data frame、list
+
+Python 的 list 時候我們只需要使用中括號 `[]` 將元素包起來，而在選擇元素也是使用中括號 `[]` 搭配索引值，Python 的索引值由 0 開始，這跟 R 語言索引值由 1 開始有很大的區別。
+
+tuple 跟 list 很像，但是我們不能新增，刪除或者更新 tuple 的元素。我們可以使用 `tuple()` 函數將既有的 list 轉換成為 tuple，或者在建立物件的時候使用小括號 `()` 有別於建立 list 的時候使用的中括號 `[]`。
+
+dictionary 是帶有鍵值（key）的 list，這樣的特性讓我們在使用中括號 `[]` 選擇元素時可以使用鍵值，在建立 Python 的 dictionary 時候我們只需要使用大括號 `{}` 或者使用 `dict()` 函數轉換既有的 list。
+
+
 
 ## 迴圈與流程控制
 
