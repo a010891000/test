@@ -12,3 +12,13 @@
 輸入 python -V （大寫）或是 python --version ，就能檢查Python的版本
 
 ![2](https://raw.githubusercontent.com/a010891000/test/master/image/Raspbian/2.png)
+
+
+# Linux 指令
+
++ -y = yes
++ -U = ?
+
+update是更新源里的软件。
+
+upgrade顾名思义是升级，升级你系统里的软件
