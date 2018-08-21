@@ -111,7 +111,7 @@ git commit -m '這是作業的說明'  --author='操作者姓名<email信箱>'
 gitk //要在檔案庫資料夾的路徑下
 ```
 
-![用圖形檢視模式觀察檔案庫]()
+![用圖形檢視模式觀察檔案庫](https://raw.githubusercontent.com/a010891000/test/master/image/Git/graphic_view_mode.png)
 
 如圖，左上角會有不同顏色的小節點，每個節點表示執行一次 `git commit`指令。節點右邊會顯示輸入作業說明的第一行文字；左下角視窗會顯示目前選定節點完整資料。最上面的節點會多出一個 master 標籤，表示這是檔案的 「主要分支(branch)」。
 
@@ -129,7 +129,7 @@ tree|顯示完整的節點內容
 
 如果沒有在檔案庫的資料夾下輸入：
 
-![404]()
+![404](https://raw.githubusercontent.com/a010891000/test/master/image/Git/not_found.png)
 
 11. 檢視完檔案庫，結束圖形操作模式，回到 Git Bash 程式，輸入下列指令，離開 Git Bash
 
@@ -173,7 +173,7 @@ git config --global core.quotepath false
 + `git add`：將檔案內容加入 Git 系統的索引
 + `git commit`：將檔案內容存入檔案庫
 
-![把檔案存入Git檔案庫的流程]()
+![把檔案存入Git檔案庫的流程](https://raw.githubusercontent.com/a010891000/test/master/image/Git/process_of_git.png)
 
 #### 補充說明
 
