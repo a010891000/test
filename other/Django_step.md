@@ -435,6 +435,15 @@ url(regex, view)
 
 ![Hello World!](https://djangogirlstaipei.gitbooks.io/django-girls-taipei-tutorial/images/hello-world-plaintext.png)
 
+**如果出現禁止訪問，先重新開啟終端機，並輸入下列指令：**
+
+```
+sudo pip install django --upgrade 
+```
+
+再重新執行 `runserver`看看。
+
+
 # Templates
 
 上一章的例子，只是很簡單的顯示一行字串。 現在，讓我們加上一些 HTML/CSS 美化網頁，並動態顯示每次進來這個頁面的時間。
