@@ -161,7 +161,7 @@ git config --global core.quotepath false
 
 5. 如果指令太長，像要換到下一行繼續輸入，可以用反斜線字元 '\' 結尾，然後按下 Enter 鍵，繼續輸入。
 
-### 瞭解 Git 的運作方式 
+### 1-2 瞭解 Git 的運作方式 
 
 操作 Git 的基本流程：
 
@@ -237,3 +237,109 @@ Git 有三個不同層級的設定檔，它們有不同的優先權，高優先�
 3. Git 程式的安裝資料夾內的 **etc\gitconfig** 檔
 
 只有前兩個設定檔中沒有設定的項目，這個設定檔的設定才會生效，這是公用的設定檔，它對所有登入帳號和所有 Git 檔案庫都有效。
+
+### 2-1 git config 指令的用法
+
+顯示目前 Git 的設定值可以執行下列指令：
+
+```
+git config -l
+```
+
+就會顯示出執行後的畫面
+
+![執行 git config -l 指令的顯示畫面]()
+
+B部分是顯示檔案庫資料夾內 **.git** 子資料夾中的 config 檔的設定，想只看這部分設定可輸入下列指令：
+
+```
+git config --system -l
+```
+
+C部分是顯示登入帳號 home directory 內的 **.gitconfig**檔的設定，想只看這部分設定可輸入下列指令：
+
+```
+git config --global -l
+```
+
+我們可以指定要把操作者姓名和 email 紀錄在哪一個設定檔，如果要記錄在檔案庫中的設定檔，可輸入下列指令：
+
+```
+git config user.name "操作者姓名"
+git config user.email "操作者email"
+```
+
+如果要記錄在登入帳號的 home directory 內的 **.gitconfig**，可輸入下列指令：
+
+```
+git config --global user.name "操作者姓名"
+git config --global user.email "操作者email"
+```
+
+如果要記錄在 Git 程式的安裝資料夾內的 **etc\gitconfig**，可輸入下列指令：
+
+```
+git config --system user.name "操作者姓名"
+git config --system user.email "操作者email"
+```
+
+我們可以利用 `git config` 指令的選項決定要寫入哪一個設定檔
++ `--global` : home directory 內的 **.gitconfig**的設定檔
++ `--system` : Git 程式資料夾內的 **etc\gitconfig**的設定檔
+
+要移除設定檔中的項目，可使用`unset`指令，麗如要移除檔案庫設定檔中的操作者姓名，可輸入下列指令：
+
+```
+git config --unset user.name
+```
+
+如果要移除其他設定檔的項目，視情況加入 `--global` 或是 `--system`
+
+#### 補充說明
+
+git 指令的「長」選項和「短」選項
++ 長選項：使用二個連結字元開頭，例如：-m
++ 短選項：使用一個連結字元開頭，例如：--author
+
+其實使用一個連結字元開頭只是簡略的形式，也可以轉換成完整的形式，例如：
+
+簡略形式|完整形式
+--------|--------
+git commit -m 說明|git commit --message 說明
+git commit -l | git commit --list
+
+**並非每一個選項都有簡便的形式**
+
+因為現在的人都習慣圖形介面的程式，所以需要輸入指令會覺得較為麻煩。尤其是長度較長的指令再搭配上選項，令人頭昏眼花。
+
+為了提高便利性，我們可以定義指令的別名(alias)，是利用簡短的縮寫來表示正規指令。只要輸入我們定義的「指令別名」， Git 系統會自動把它換成正式的指令。
+
+定義指令別名的方法如下：
+
+```
+git commit alias.指令別名 '正式的指令和選項'
+```
+
+例子：
+
+```
+git commit alias.con 'config -l'
+```
+
+執行以上指令，會在檔案庫的 config 設定檔中新增一個 alias 項目，然後就可下指令顯示 Git 的設定，結果等同於執行 `git config -l` ：
+
+```
+git con //alias 後的 con 代替正式指令 commit -l
+```
+
+移除 alias
+
+```
+git commit -unset alias.con
+```
+
+
+注意：
+
++ **指令別名** 不可包含空格
++ **正式的指令和選項** 就是下指令時，在 git 之後輸入的那串文字。**如果裡頭沒有空格，可以省略單引號**
