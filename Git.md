@@ -246,9 +246,9 @@ Git 有三個不同層級的設定檔，它們有不同的優先權，高優先�
 git config -l
 ```
 
-就會顯示出執行後的畫面
+就會顯示出執行後的畫面(顯示的順序是由優先權低依序到優先權高)
 
-![執行 git config -l 指令的顯示畫面]()
+![執行 git config -l 指令的顯示畫面](https://raw.githubusercontent.com/a010891000/test/master/image/Git/git_config.png)
 
 B部分是顯示檔案庫資料夾內 **.git** 子資料夾中的 config 檔的設定，想只看這部分設定可輸入下列指令：
 
@@ -417,7 +417,7 @@ poem3.txt
 
 5. 回到 Git Bash 程式，執行 `git status` 指令。畫面會顯示以下訊息(告訴我們資料夾中有**有3個 untracked 檔案 ** 
 
-![git status with untracked]()
+![git status with untracked](https://raw.githubusercontent.com/a010891000/test/master/image/Git/git_status.png)
 
 6. 現在將 poem1.txt 加入 Git 檔案庫，輸入下列指令
 
@@ -441,7 +441,7 @@ folder
 
 9. 執行 `git status` 現在程式會顯示 poem2.txt 和 poem3.txt 是 tracked  
 
-![git status]()
+![git status](https://raw.githubusercontent.com/a010891000/test/master/image/Git/git_status_add_poem1.png)
 
 10. 開啟 poem1.txt 、 poem2.txt 和 poem3.txt ，修改內容。
 
@@ -474,7 +474,7 @@ poem3.txt
 
 11. 再次執行 `git status` ，現在程式會顯示以下訊息
 
-![git status]()
+![git status](https://raw.githubusercontent.com/a010891000/test/master/image/Git/git_status_moified_poem1.png)
 
 另外關於 **.gitignore** 檔案的用法，另外在下方補充說明：
 
