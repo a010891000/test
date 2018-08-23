@@ -151,10 +151,10 @@ Git 會把目前的執行狀態記錄在資料夾內，下次再啟動 Git Bash 
 加入 UTF-8 設定，避免檔案交換處理編碼錯誤
 
 git config --global core.quotepath false
-					gui.encoding utf-8
-					li8n.commit.encoding utf-8
-					li8n.logoutputencoding utf-8
-					export LESSCHARSET = utf-8
+git config --global	gui.encoding utf-8
+git config --global	li8n.commit.encoding utf-8
+git config --global	li8n.logoutputencoding utf-8
+git config --global	export LESSCHARSET = utf-8
 ```
 
 4. 執行 `git help -a`則顯示完整的指令清單；執行 `git 指令 --help` 例如： `git init --help` 則會顯示該指令的網頁說明檔案。
@@ -343,3 +343,155 @@ git commit -unset alias.con
 
 + **指令別名** 不可包含空格
 + **正式的指令和選項** 就是下指令時，在 git 之後輸入的那串文字。**如果裡頭沒有空格，可以省略單引號**
+
+### 2-2 檔案比對程式
+
+`git diff` 指令是用來執行檔案比對的功能，它可以比對目前資料夾中的檔案，和檔案庫中最新的版本，或是已經加入索引的版本（也就是執行 git add 的檔案）之間的差異
+
+例如： 
+
+```
+index d99f9f0..793116e 100644
+--- a/poem.txt
++++ b/poem.txt
+@@ -1,3 +1,3 @@
+-11111
+ 22222
+ 33333
++44444
+```
+
+@@後面的數字
++ -1,3 : 表示以下資料是a檔案中第一行開始後面3行，「-」只是表示a檔案
++ +1,3 : 表示以下資料是b檔案中第一行開始後面3行，「+」只是表示b檔案
+
+「-」只是開頭表示a檔案變成b檔案的時候，這一行被加入
+「+」只是開頭表示a檔案變成b檔案的時候，這一行被刪除
+
+沒有正負的開頭的部分表示沒有被修改
+
+其實在 Git 的資料夾下 輸入 `gitk` 可以用圖形介面模式觀看差異
+
+## 把檔案存入Git檔案庫
+
+### 3-1 排除不需要加入的檔案庫的檔案
+
+Git 會將檔案和資料夾分為三類：
+1. 被忽略的 (tracked) ：檔案處與此狀態，表示檔案已經被加入 Git 檔案庫。
+2. 忽略的 (ignored) ：檔案處與此狀態，表示 Git 不要檢查這個檔案。
+3. 不被追蹤的 (untracked) ：檔案處與此狀態，表示檔案尚未被歸類。
+
+一開始的時候，所有檔案都是 untracked 。執行 `git status` 指令，就會顯示 untracked 檔案清單。(提醒那些檔案商未被歸類)
+
+要讓檔案變成 ignored 狀態，需要在資料夾中建立一個名為 **.gitignore** 的檔案，並將要忽略的檔案逐一列在檔案裡頭(一個檔案一行)
+
+#### 動手試看看
+
+1. 建立一個新的資料夾
+2. 啟動 Git Bash 程式，利用 cd 指令切換到這個資料夾，或是對此資料夾，點擊右鍵，選擇 Git Bash Here
+3. 執行 git init
+4. 建立三個文字檔： poem1.txt 、 poem2.txt 和 poem3.txt
+
+以下是文字檔的內容：
+
+poem1.txt
+
+```
+細草微風岸
+桅強獨夜舟
+```
+
+poem2.txt
+
+```
+黃河之水天上來
+奔流到海不復回
+```
+
+poem3.txt
+
+```
+朝辭白帝彩雲間
+千里江陵一日還
+```
+
+5. 回到 Git Bash 程式，執行 `git status` 指令。畫面會顯示以下訊息(告訴我們資料夾中有**有3個 untracked 檔案 ** 
+
+![git status with untracked]()
+
+6. 現在將 poem1.txt 加入 Git 檔案庫，輸入下列指令
+
+```
+git add poem1.txt
+git commit -m '1st commit'
+```
+
+7.  建立一個 **.gitignore** ，可直接在 Git Bash 程式中執行指令
+
+```
+touch .gitignore
+```
+
+8.  開啟**.gitignore**，輸入下列內容。(∵ **.gitignore** 檔案本身也在資料夾中，所以要把它列為 ignored 檔案之一)
+
+```
+.gitignore
+folder
+```
+
+9. 執行 `git status` 現在程式會顯示 poem2.txt 和 poem3.txt 是 tracked  
+
+![git status]()
+
+10. 開啟 poem1.txt 、 poem2.txt 和 poem3.txt ，修改內容。
+
+poem1.txt
+
+```
+細草微風岸
+桅強獨夜舟
+星垂平野闊 // 新加入的文字
+月湧大江流 // 新加入的文字
+```
+
+poem2.txt
+
+```
+黃河之水天上來
+奔流到海不復回
+高堂明鏡悲白髮 // 新加入的文字
+朝如青絲暮成雪 // 新加入的文字
+```
+
+poem3.txt
+
+```
+朝辭白帝彩雲間
+千里江陵一日還
+兩岸猿聲啼不住 // 新加入的文字
+輕舟已過萬重山 // 新加入的文字
+```
+
+11. 再次執行 `git status` ，現在程式會顯示以下訊息
+
+![git status]()
+
+另外關於 **.gitignore** 檔案的用法，另外在下方補充說明：
+
+1. **.gitignore** 檔案的影響範圍是它所在的資料夾和所有子資料夾。
+
+2. 每個資料夾都可以建立自己的 **.gitignore** 檔案，如果它上層的資料夾也有 **.gitignore** 檔案，這個資料夾也會上層的影響。
+
+3. **.gitignore** 檔案中用符號開頭
++ ** # ** ：表示註解
++ ** / ** ：資料夾路徑
++ ** * ** ：檔案名稱
++ ** ! ** ：表示排除
+
+例如以下設定表示要忽略所有副檔名是 txt 的檔案，但是不包括 note.txt
+
+```
+*.txt
+#設定不要忽略 note.txt
+!note.txt
+```
