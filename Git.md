@@ -4,6 +4,13 @@ Git 是一個分散式版本控制軟體，最初由林納斯·托瓦茲(Linus T
 
 很多著名的軟體都使用git進行版本控制，其中包括Linux內核、X.Org伺服器和OLPC內核等專案的開發流程。
 
+## Keyword
+
++ 分支 branch
++ 合併 merge
++ 檔案庫 repository
++ 
+
 ## 主要功能
 
 Git 是用於 Linux 內和開發的版本控制工具，他採用了分散式版本庫的作法，不需要伺服器端軟體，就可以運作版本控制，使得原始碼的是出汗交流及其方便。 Git 的速度很快，這對於諸如 Linux 內核這樣大專案來窩自然很重要。 Git 最為出色的是它的合併追蹤 (merge tracing) 能力。
@@ -14,11 +21,11 @@ Git 是用於 Linux 內和開發的版本控制工具，他採用了分散式版
 
 版本控制系統（Version Control System, VCS）是程式管理軟體的通稱，它是用來保存程式檔的修改紀錄，以及歷史版本，以便於日後檢視或是使用。
 
-最早期的系統是採用集中控管的方式。在完成修改和回傳之前，其他人都不能更動這個程式碼（如Google簡報）。這種方式有效避免「衝突」發生（也就是不同人，同時修改同一段程式碼，造成混淆的情況）。
+最早期的系統是採用 TFVC (Team Foundation Version Control) 這類集中式版本控管系統的方式。在完成修改和回傳之前，其他人都不能更動這個程式碼（如Google簡報）。這種方式有效避免「衝突」發生（也就是不同人，同時修改同一段程式碼，造成混淆的情況）。
 
 但是付出的代價是效率降低。因為如果有人想要修改的檔案正好有別人正在修改，就必須等程式檔回傳才能動手修改。要修改的人一多，相互等待所造成的時間浪費將非常可觀。
 
-新的 VCS 則採用分散式的作法。每一個人隨時都可以取得任何一個程式檔來修改，等到送回 VCS 的時候，再視需要進行合併(merge)
+新的 VCS 則採用分散式版本控管系統(DVCS; Distributed Version Control System)。每一個人隨時都可以取得任何一個程式檔來修改，等到送回 VCS 的時候，再視需要進行合併(merge)
 
 現在有愈來愈多軟體公司開是使用 Git  管理程式專案，網路上也有專門提供 Git Server 服務的網站，如： GitHub 、 GitLab。
 
@@ -45,7 +52,7 @@ git init
 ```
 Git 會回應訊息「Initialized empty Git repository in 資料夾路徑/.git/」，表示已經完成準備工作。
 
-5. 建立一個新的文字檔來測試 Git 如何管理檔案，將文字檔命名為 poem.txt ，並在文字黨內輸入一行文字：空山新雨後 
+5. 建立一個新的文字檔來測試 Git 如何管理檔案，將文字檔命名為 poem.txt ，並在文字檔內輸入一行文字：空山新雨後 
  
 6. 回到 Git Bash 程式，輸入下列指令：
 
@@ -124,10 +131,7 @@ gitk //要在檔案庫資料夾的路徑下
 patch|顯示和前一個 commit 節點的差異 
 tree|顯示完整的節點內容
 
-
-
-
-如果沒有在檔案庫的資料夾下輸入：
+如果沒有在檔案庫的資料夾下輸入`gitk`：
 
 ![404](https://raw.githubusercontent.com/a010891000/test/master/image/Git/not_found.png)
 
@@ -151,10 +155,10 @@ Git 會把目前的執行狀態記錄在資料夾內，下次再啟動 Git Bash 
 加入 UTF-8 設定，避免檔案交換處理編碼錯誤
 
 git config --global core.quotepath false
-git config --global	gui.encoding utf-8
-git config --global	li8n.commit.encoding utf-8
-git config --global	li8n.logoutputencoding utf-8
-git config --global	export LESSCHARSET = utf-8
+git config --global gui.encoding utf-8
+git config --global li8n.commit.encoding utf-8
+git config --global li8n.logoutputencoding utf-8
+git config --global export LESSCHARSET = utf-8
 ```
 
 4. 執行 `git help -a`則顯示完整的指令清單；執行 `git 指令 --help` 例如： `git init --help` 則會顯示該指令的網頁說明檔案。
@@ -287,7 +291,7 @@ git config --system user.email "操作者email"
 + `--global` : home directory 內的 **.gitconfig**的設定檔
 + `--system` : Git 程式資料夾內的 **etc\gitconfig**的設定檔
 
-要移除設定檔中的項目，可使用`unset`指令，麗如要移除檔案庫設定檔中的操作者姓名，可輸入下列指令：
+要移除設定檔中的項目，可使用`unset`指令，例如要移除檔案庫設定檔中的操作者姓名，可輸入下列指令：
 
 ```
 git config --unset user.name
@@ -474,7 +478,7 @@ poem3.txt
 
 11. 再次執行 `git status` ，現在程式會顯示以下訊息
 
-![git status](https://raw.githubusercontent.com/a010891000/test/master/image/Git/git_status_moified_poem1.png)
+![git status](https://raw.githubusercontent.com/a010891000/test/master/image/Git/git_status_modified_poem1.png)
 
 另外關於 **.gitignore** 檔案的用法，另外在下方補充說明：
 
