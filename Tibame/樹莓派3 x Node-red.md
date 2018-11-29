@@ -154,7 +154,7 @@ WantedBy=multi-user.target
 + 使用 Win32 disk Imager 備份記憶卡
 
 
-### 重點回庫
+### 重點回顧
 
 # 資料來源
 
